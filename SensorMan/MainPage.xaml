@@ -8,13 +8,22 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button Content="Button" HorizontalAlignment="Left" Margin="15,19,0,0" VerticalAlignment="Top" Click="Button_Click"/>
-        <TextBox x:Name="TemperatureValue" HorizontalAlignment="Left" Margin="275,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="71" IsReadOnly="True"/>
-        <TextBox x:Name="VolumeValue" HorizontalAlignment="Left" Margin="275,47,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" IsReadOnly="True" Width="71"/>
-        <TextBox x:Name="GaseousValue" HorizontalAlignment="Left" Margin="275,84,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" IsReadOnly="True" Width="71"/>
+        <Button x:Name="UpdateTemperatureButton" Content="U" HorizontalAlignment="Left" Margin="119,10,0,0" VerticalAlignment="Top" Height="32" Width="31" Click="UpdateTemperatureButton_Click"/>
         <TextBox x:Name="TemperatureLabel" HorizontalAlignment="Left" Margin="166,10,0,0" TextWrapping="Wrap" Text="Temperature" VerticalAlignment="Top" IsReadOnly="True"/>
-        <TextBox HorizontalAlignment="Left" Margin="166,47,0,0" TextWrapping="Wrap" Text="Volume" VerticalAlignment="Top" Width="104" IsReadOnly="True"/>
-        <TextBox HorizontalAlignment="Left" Margin="166,84,0,0" TextWrapping="Wrap" Text="Gaseous" VerticalAlignment="Top" Width="104" IsReadOnly="True"/>
+        <TextBox x:Name="TemperatureValue" HorizontalAlignment="Left" Margin="275,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="71" IsReadOnly="True"/>
 
+        <Button x:Name="UpdateVolumeButton" Content="U" HorizontalAlignment="Left" Margin="119,47,0,0" VerticalAlignment="Top" Height="32" Width="31" Click="UpdateVolumeButton_Click"/>
+        <TextBox x:Name="VolumeLabel" HorizontalAlignment="Left" Margin="166,47,0,0" TextWrapping="Wrap" Text="Volume" VerticalAlignment="Top" Width="104" IsReadOnly="True"/>
+        <TextBox x:Name="VolumeValue" HorizontalAlignment="Left" Margin="275,47,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" IsReadOnly="True" Width="71"/>
+
+        <Button x:Name="UpdateGaseousButton" Content="U" HorizontalAlignment="Left" Margin="119,84,0,0" VerticalAlignment="Top" Height="32" Width="31" Click="UpdateGaseousButton_Click"/>
+        <TextBox x:Name="GaseousLabel" HorizontalAlignment="Left" Margin="166,84,0,0" TextWrapping="Wrap" Text="Gaseous" VerticalAlignment="Top" Width="104" IsReadOnly="True"/>
+        <TextBox x:Name="GaseousValue" HorizontalAlignment="Left" Margin="275,84,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" IsReadOnly="True" Width="71"/>
+
+        <Button x:Name="UpdateTouchButton" Content="U" HorizontalAlignment="Left" Margin="119,121,0,0" VerticalAlignment="Top" Height="32" Width="31" RenderTransformOrigin="0.447,1.618" Click="UpdateTouchButton_Click"/>
+        <TextBox x:Name="TouchLabel" HorizontalAlignment="Left" Margin="166,121,0,0" TextWrapping="Wrap" Text="Touch" VerticalAlignment="Top" Width="104" IsReadOnly="True"/>
+        <TextBox x:Name="TouchValue" HorizontalAlignment="Left" Margin="275,121,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" IsReadOnly="True" Width="71"/>
+
+        <Button Content="Exit" HorizontalAlignment="Left" Margin="10,158,0,0" VerticalAlignment="Top" Click="Button_Click"/>
     </Grid>
 </Page>
